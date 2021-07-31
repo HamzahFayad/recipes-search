@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>Search Recipe API</h1>
+    <h1>Foooody - Search Recipe API</h1>
     <p class="note">* Only 10 requests per minute are possible.</p>
     <div class="search">
       <Search />
