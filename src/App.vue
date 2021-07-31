@@ -1,19 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>Search Recipe API</h1>
+    <p class="note">* Only 10 requests per minute are possible.</p>
+    <div class="search">
+      <Search />
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Search from "./components/Search.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Search,
+  },
+};
 </script>
 
 <style>
@@ -21,8 +24,30 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 3.5%;
+  padding: 0;
 }
+h1,
+.note {
+  text-align: center;
+}
+.note {
+  font-size: 13px;
+}
+/* h1 {
+  font-size: 24px;
+}
+h2 {
+  font-size: 20px;
+}
+h3 {
+  font-size: 18px;
+}
+h4 {
+  font-size: 16px;
+}
+p {
+  font-size: 14px;
+} */
 </style>
